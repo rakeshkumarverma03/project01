@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+#nav-bar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+.logo {
+    margin: 10px 34px;
+}
+
+.logo img {
+    height: 30px;
+    width: 30px;
+    margin: 3px 5px;
+    border-radius: 100%;
+}
+
+#nav-bar ul {
+    display: flex;
+}
+
+#nav-bar ul li {
+    list-style: none;
+    font: 1.3rem;
+}
+
+#nav-bar ul li a {
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    color: white;
+    font-family: Bree Serif ;
+}
+
+/* Home section  to center the item*/
+#Home {
+    display: flex;
+    height: 550px;
+    flex-direction: column;
+    padding: 2px 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Home::before {
+    content: "";
+    background-image: url("mediterranean-cuisine-2378758_1280.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 550px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+ #Home h1{
+    font-family:Bree Serif ; 
+    color: white;
+    text-align: center;
+
+}
+#Home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+ 
+}
+
+/* utility class */
+.h-parammary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family:Bree Serif ; 
+
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2.8;
+    padding: 12px;
+    font-family:Bree Serif ; 
+}
+.btn{
+    padding: 6px 20px;
+    border: 1px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+
+}
+/* services-section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 6px;
+    border-radius: 28px;
+    margin-bottom: 20px;
+
+
+}
+#services .box p{
+  font-family: Bree Serif ; ;
+}
+#services .box img{
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+.client-section{
+    /* height: 344px; */
+    position: relative;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients img{
+     height: 124px; 
+}
+.client-items{
+    padding: 34px;
+}
+.client-section::before{
+    content: "";
+    position: absolute;
+    background: url("mediterranean-cuisine-2378758_1280.jpg");
+    width: 100%;
+    height: 54%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+.contact{
+    position: relative;
+    /* height: 100%;
+    width: 100%; */
+}
+.contact::before{
+     position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url("mediterranean-cuisine-2378758_1280.jpg");
+   
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box input,#contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+border-radius: 9px;
+font-size: 1.1rem;
+}
+#contact-box form{
+width: 40%;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+#contact-box label{
+    font-size: 1.rem;
+    font-family:Bree Serif ; 
+
+}
+
